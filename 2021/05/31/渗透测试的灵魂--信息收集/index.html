@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hhades, Hhades">
+    <meta name="keywords" content="渗透测试的灵魂--信息收集, Hhades">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hhades | Hhades</title>
+    <title>渗透测试的灵魂--信息收集 | Hhades</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -320,12 +320,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hhades</h1>
+                    <h1 class="description center-align post-title">渗透测试的灵魂--信息收集</h1>
                 </div>
             </div>
         </div>
@@ -441,8 +441,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/test/">
-                                <span class="chip bg-color">test</span>
+                            <a href="/tags/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/">
+                                <span class="chip bg-color">信息收集</span>
                             </a>
                         
                     </div>
@@ -457,7 +457,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-05-22
+                    2021-05-31
                 </div>
                 
 
@@ -481,9 +481,79 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <hr>
-<p><img src="/2021/05/22/Hhades/0.jpg" alt="0"></p>
-<p>!<img src="/2021/05/22/Hhades/1.jpg" alt="1"></p>
+                <h4 id="一、whois信息"><a href="#一、whois信息" class="headerlink" title="一、whois信息"></a>一、whois信息</h4><h5 id="1-收集内容"><a href="#1-收集内容" class="headerlink" title="1.收集内容"></a>1.收集内容</h5><p>域名注册时留下的信息，比如留下管理员的名字、电话号码、邮箱。</p>
+<h5 id="2-如何收集"><a href="#2-如何收集" class="headerlink" title="2.如何收集"></a>2.如何收集</h5><p>站长工具查询：<a target="_blank" rel="noopener" href="http://whois.chinaz.com/">http://whois.chinaz.com/</a></p>
+<h5 id="3-信息用途"><a href="#3-信息用途" class="headerlink" title="3.信息用途"></a>3.信息用途</h5><p>域名注册人可能就是网站管理员，可以尝试社工、套路，查询是不是注册了其他域名扩大测试范围，可以用这个网站<a target="_blank" rel="noopener" href="https://www.bugku.com/mima/">https://www.bugku.com/mima/</a> 密码工具生成密码字典从而可以尝试各种密码爆破。</p>
+<p><img src="/2021/05/31/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E7%9A%84%E7%81%B5%E9%AD%82--%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/image-20210531130440285.png" alt="image-20210531130440285">注：此为站长之家的whois信息查询，要想知道跟多关联信息可以点击whois反查。</p>
+<h4 id="二、子域名"><a href="#二、子域名" class="headerlink" title="二、子域名"></a>二、子域名</h4><hr>
+<h5 id="1-关于域名"><a href="#1-关于域名" class="headerlink" title="1.关于域名"></a>1.关于域名</h5><p>①域名级数是指一个域名由多少级组成，域名的各个级别被“.”分开，简而言之，有多少个点就是几级域名。一个顶级域名可以注册N个二级域名。</p>
+<p>②顶级域名：.com(商) .edu(教) .gov(政) .mil(军)</p>
+<p> 一级域名：qq.com</p>
+<p> 二级域名：ke.qq.com</p>
+<p> 三级域名：zhz.ke.qq.com</p>
+<h5 id="2-收集内容"><a href="#2-收集内容" class="headerlink" title="2.收集内容"></a>2.收集内容</h5><p>顶级域名下的二级域名或者三级甚至更多级的域名都属于子域名，有一些直接ip访问的WEB站也归结于子域名收集范围。</p>
+<h5 id="3-如何收集"><a href="#3-如何收集" class="headerlink" title="3.如何收集"></a>3.如何收集</h5><p>①通过google hack语法进行寻找（爬取搜索引擎）</p>
+<p>②通过某些平台（微步社区 云悉）</p>
+<p>③使用工具爆破DNS服务器(SubBrute  Knockpy github有下载) 泛解析（没有设置过的解析）（拿一本大字典，然后直接拼接进你的域名，域名的子域名他实际上是常用的比如OA类似的）。</p>
+<p>④网页内蜘蛛爬虫。（工具）</p>
+<h5 id="4-信息用途"><a href="#4-信息用途" class="headerlink" title="4.信息用途"></a>4.信息用途</h5><p>子域名可以扩大测试范围，同一个域名下的二级域名都属于相同资产，一般而言都有相关的联系。通过收集子域名，一般来说主站的防护相对严密，而子域名的站点可能防护没有那么严密。</p>
+<h4 id="三、端口"><a href="#三、端口" class="headerlink" title="三、端口"></a>三、端口</h4><hr>
+<h5 id="1-关于端口"><a href="#1-关于端口" class="headerlink" title="1.关于端口"></a>1.关于端口</h5><p>①在网络技术中，端口分为两种：</p>
+<p>物理端口:也称接口,如usb端口等。</p>
+<p>逻辑端口:一般是指TCP/IP协议中的端口，如用网页浏览的80端口。</p>
+<p>如果看不懂，可以这么理解：端口其实就是队，操作系统为各个进程分配了不同的队，数据包按照目的端口被推入相应的队中。</p>
+<p>②有多少个端口（0-65535）</p>
+<p>③端口分类：</p>
+<p>Ⅰ.周知端口（Well Known Ports）</p>
+<p>周知端口是众所周知的端口号，范围从0到1023，</p>
+<p>Ⅱ.动态端口（Dynamic Ports）</p>
+<p>动态端口的范围是从49152到65535。之所以称为动态端口，是因为它一般不固定分配某种服务，而是动态分配。</p>
+<p>Ⅲ.注册端口</p>
+<p>端口1024到49151，分配给用户进程或应用程序。这些进程主要是用户选择安装的一些应用程序，而不是已经分配好了公认端口的常用程序。这些端口在没有被服务器资源占用的时候，可以用用户端动态选用为源端口。</p>
+<h5 id="2-收集内容-1"><a href="#2-收集内容-1" class="headerlink" title="2.收集内容"></a>2.收集内容</h5><p>收集对应IP的服务器端口，有那些端口是有开启的。</p>
+<h5 id="3-如何收集-1"><a href="#3-如何收集-1" class="headerlink" title="3.如何收集"></a>3.如何收集</h5><p>Nmap -O 192.168.1.1 （kali linux自带）</p>
+<h5 id="4-信息用途-1"><a href="#4-信息用途-1" class="headerlink" title="4.信息用途"></a>4.信息用途</h5><p>有些危险端口开放了我们就可以尝试测试，例如 445|3306|22|1433|6379 可以尝试爆破或者是使用某些端口存在漏洞的服务，而且有可能一台服务器上面不同端口代表着不同的Web网站。</p>
+<h4 id="四、旁站"><a href="#四、旁站" class="headerlink" title="四、旁站"></a>四、旁站</h4><hr>
+<h5 id="1-关于旁站"><a href="#1-关于旁站" class="headerlink" title="1.关于旁站"></a>1.关于旁站</h5><p>①就是多个网站用同一个ip，他们被称为互相的旁站，但是同ip不一定是同服务器，因为1个ip里面可能有一个庞大的内网。</p>
+<p>②旁站和C段的区别：旁站是同ip网站，C段是公网Ip同一网段下的网站。</p>
+<p>③子域名和旁站的区别：旁站指同一ip下的网站，子域名指顶级域名下的二级域名或者三级甚至更多级的域名，子域名有些同一ip有些不同一ip。</p>
+<h5 id="2-收集内容-2"><a href="#2-收集内容-2" class="headerlink" title="2.收集内容"></a>2.收集内容</h5><p>同一个IP的下的其他网站</p>
+<h5 id="3-如何收集-2"><a href="#3-如何收集-2" class="headerlink" title="3.如何收集"></a>3.如何收集</h5><p>站长工具查询:<a target="_blank" rel="noopener" href="http://s.tool.chinaz.com/same">http://s.tool.chinaz.com/same</a></p>
+<h5 id="4-信息用途-2"><a href="#4-信息用途-2" class="headerlink" title="4.信息用途"></a>4.信息用途</h5><p>旁站指的是在同一个ip上面的多个网站，如果你成功拿下旁站，运气好和主站在同一台机器上，是不是就是拿到了主站？ 如果运气不好是一个内网，我们是不是可以尝试内网渗透测试。</p>
+<h4 id="五、C段"><a href="#五、C段" class="headerlink" title="五、C段"></a>五、C段</h4><hr>
+<h5 id="1-关于C段"><a href="#1-关于C段" class="headerlink" title="1.关于C段"></a>1.关于C段</h5><p>例：192.168.1.1</p>
+<p>192就是IP的A段，168就是B段，1.1-255 就是C段。</p>
+<h5 id="2-收集内容-3"><a href="#2-收集内容-3" class="headerlink" title="2.收集内容"></a>2.收集内容</h5><p>确定ip的范围，然后对其段内的Ip主机进行信息收集。</p>
+<h5 id="3-如何收集-3"><a href="#3-如何收集-3" class="headerlink" title="3.如何收集"></a>3.如何收集</h5><p>在线扫描：<a target="_blank" rel="noopener" href="https://www.webscan.cc/">https://www.webscan.cc/</a></p>
+<h5 id="4-信息用途-3"><a href="#4-信息用途-3" class="headerlink" title="4.信息用途"></a>4.信息用途</h5><p>例如192.168.1.1 ,那么192.168.1.1-192.168.1.255 都属于同一个C段，有些学校或者大公司，他们会持有整个IP段，这个ip段中所有的ip都是那个公司的资产，拿下一台可能有用的信息，可能在同一内网。（C端测试需谨慎太容易误伤了，因为有些公司并没有整个C段，有些C段里面包含政府的网站，如果出现gov果断停止）</p>
+<h4 id="六、目录扫描"><a href="#六、目录扫描" class="headerlink" title="六、目录扫描"></a>六、目录扫描</h4><hr>
+<h5 id="1-关于网站目录"><a href="#1-关于网站目录" class="headerlink" title="1.关于网站目录"></a>1.关于网站目录</h5><p>例：<a target="_blank" rel="noopener" href="https://bbs.zkaq.cn/f/202.html">https://bbs.XXX.cn/f/202.html</a></p>
+<p>域名后面/F就是一个目录，/202.html 就是/f里面的文件</p>
+<h5 id="2-收集内容-4"><a href="#2-收集内容-4" class="headerlink" title="2.收集内容"></a>2.收集内容</h5><p>①查看robots.txt信息，收集cms的特征。</p>
+<p>②robots.txt文件是一个<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E6%96%87%E6%9C%AC">文本</a>文件，使用<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E4%BB%BB%E4%BD%95">任何</a>一个常见的<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91">文本编辑</a>器，比如<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/Windows">Windows</a>系统自带的Notepad，就可以创建和编辑它[1] 。<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/robot">robot</a>s.txt是一个协议，而不是一个<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E5%91%BD%E4%BB%A4">命令</a>。robots.txt是<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E">搜索引擎</a>中访问网站的时候要查看的第一个文件。robots.txt文件告诉<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E8%9C%98%E8%9B%9B%E7%A8%8B%E5%BA%8F">蜘蛛程序</a>在服务器上什么文件是可以被查看的。如果将<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E7%BD%91%E7%AB%99">网站</a>视为酒店里的一个房间，robots.txt就是主人在房间门口悬挂的“<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E8%AF%B7%E5%8B%BF%E6%89%93%E6%89%B0">请勿打扰</a>”或“欢迎打扫”的提示牌。这个文件告诉来访的搜索引擎哪些房间可以进入和参观，哪些房间因为存放贵重物品，或可能涉及住户及访客的隐私而不对搜索引擎开放。但robots.txt不是<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E5%91%BD%E4%BB%A4">命令</a>，也不是<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E9%98%B2%E7%81%AB%E5%A2%99">防火墙</a>，如同守门人无法阻止窃贼等恶意闯入者。</p>
+<h5 id="3-如何收集-4"><a href="#3-如何收集-4" class="headerlink" title="3.如何收集"></a>3.如何收集</h5><p>可以使用御剑等工具进行扫描。</p>
+<h5 id="4-信息用途-4"><a href="#4-信息用途-4" class="headerlink" title="4.信息用途"></a>4.信息用途</h5><p>有些网站可能某个目录下是一个新的网站，有的时候目录扫描直接下载了压缩包源码、编辑器目录、一些废弃的页面（会报错）。目录下面会有奇妙的东西，网站目录i.php。</p>
+<p>例如： 不同网站|备份文件|路径泄露</p>
+<h4 id="七、指纹识别"><a href="#七、指纹识别" class="headerlink" title="七、指纹识别"></a>七、指纹识别</h4><hr>
+<h5 id="1-关于指纹识别"><a href="#1-关于指纹识别" class="headerlink" title="1.关于指纹识别"></a>1.关于指纹识别</h5><p>指纹代表身份，网站的指纹代表网站特征。</p>
+<h5 id="2-收集内容-5"><a href="#2-收集内容-5" class="headerlink" title="2.收集内容"></a>2.收集内容</h5><p>网站：中间件，数据库，使用什么cms。</p>
+<h5 id="3-如何收集-5"><a href="#3-如何收集-5" class="headerlink" title="3.如何收集"></a>3.如何收集</h5><p>在线识别:<a target="_blank" rel="noopener" href="http://whatweb.bugscaner.com/look/">http://whatweb.bugscaner.com/look/</a></p>
+<p>云悉指纹:<a target="_blank" rel="noopener" href="http://www.yunsee.cn/finger.html">http://www.yunsee.cn/finger.html</a></p>
+<p>软件识别：御剑web指纹识别</p>
+<h5 id="4-信息用途-5"><a href="#4-信息用途-5" class="headerlink" title="4.信息用途"></a>4.信息用途</h5><p>cms可能存在通杀漏洞，如果使用了CMS建站我们可以用通杀漏洞直接测试。</p>
+<h4 id="八、内容敏感信息泄露"><a href="#八、内容敏感信息泄露" class="headerlink" title="八、内容敏感信息泄露"></a>八、内容敏感信息泄露</h4><hr>
+<h5 id="1-收集内容-1"><a href="#1-收集内容-1" class="headerlink" title="1.收集内容"></a>1.收集内容</h5><p>找到网站相关的某些敏感内容。</p>
+<h5 id="2-收集内容-6"><a href="#2-收集内容-6" class="headerlink" title="2.收集内容"></a>2.收集内容</h5><p>比如包含身份证号码的表格、包含服务器账号密码的文件、某些敏感文件、备份数据库。</p>
+<h5 id="3-如何收集-6"><a href="#3-如何收集-6" class="headerlink" title="3.如何收集"></a>3.如何收集</h5><p>利用谷歌语法，和谷歌镜像站去收集<a target="_blank" rel="noopener" href="https://g.luciaz.me/">https://g.luciaz.me/</a>  （密码心灵之约）</p>
+<h5 id="4-信息用途-6"><a href="#4-信息用途-6" class="headerlink" title="4.信息用途"></a>4.信息用途</h5><p>比如EDU类网站渗透测试，可以收集学校学生学号，身份证号码，管理员信息，然后利用敏感信息自行脑补出各种登录账号密码，尝试暴力破解。</p>
+<h4 id="九、基于物联网"><a href="#九、基于物联网" class="headerlink" title="九、基于物联网"></a>九、基于物联网</h4><hr>
+<p>搜索联网的网络设备</p>
+<p>在线的暴露的网络设备：路由器、主机、智能电视、联网设备</p>
+<p><img src="/2021/05/31/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E7%9A%84%E7%81%B5%E9%AD%82--%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/image-20210531134404487.png" alt="image-20210531134404487"></p>
+<p>钟馗之眼：<a target="_blank" rel="noopener" href="http://www.zoomeye.org/">http://www.zoomeye.org</a></p>
+<p>Shodan：<a target="_blank" rel="noopener" href="https://www.shodan.io/">https://www.shodan.io</a></p>
+<p>Fofa：<a target="_blank" rel="noopener" href="https://fofa.so/">https://fofa.so/</a> （可以搜索到相关子域名）</p>
+<p>声明：以上技术仅用于渗透测试技术交流，切勿用于其他用途。</p>
 
                 
             </div>
@@ -510,7 +580,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://Hhades888.github.io/2021/05/22/Hhades/">http://Hhades888.github.io/2021/05/22/Hhades/</a>
+                    <a href="http://Hhades888.github.io/2021/05/31/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E7%9A%84%E7%81%B5%E9%AD%82--%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/">http://Hhades888.github.io/2021/05/31/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E7%9A%84%E7%81%B5%E9%AD%82--%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -548,8 +618,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/test/">
-                                    <span class="chip bg-color">test</span>
+                                <a href="/tags/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/">
+                                    <span class="chip bg-color">信息收集</span>
                                 </a>
                             
                         </div>
@@ -726,13 +796,13 @@
                 <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/2021/05/22/Hhades/">
+                <a href="/2021/05/31/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E7%9A%84%E7%81%B5%E9%AD%82--%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="Hhades">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="渗透测试的灵魂--信息收集">
                         
-                        <span class="card-title">Hhades</span>
+                        <span class="card-title">渗透测试的灵魂--信息收集</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -743,7 +813,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-05-22
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-05-31
                             </span>
                         <span class="publish-author">
                             
@@ -757,8 +827,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/test/">
-                        <span class="chip bg-color">test</span>
+                    <a href="/tags/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/">
+                        <span class="chip bg-color">信息收集</span>
                     </a>
                     
                 </div>
@@ -772,13 +842,13 @@
                 本篇&nbsp;<i class="far fa-dot-circle"></i>
             </div>
             <div class="card">
-                <a href="/2021/05/22/Hhades/">
+                <a href="/2021/05/31/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E7%9A%84%E7%81%B5%E9%AD%82--%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="Hhades">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="渗透测试的灵魂--信息收集">
                         
-                        <span class="card-title">Hhades</span>
+                        <span class="card-title">渗透测试的灵魂--信息收集</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -789,7 +859,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-05-22
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-05-31
                             </span>
                         <span class="publish-author">
                             
@@ -803,8 +873,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/test/">
-                        <span class="chip bg-color">test</span>
+                    <a href="/tags/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/">
+                        <span class="chip bg-color">信息收集</span>
                     </a>
                     
                 </div>
